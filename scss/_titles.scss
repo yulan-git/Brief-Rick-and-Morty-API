@@ -1,0 +1,20 @@
+.titlePrincipal{
+    color: $title;
+    font-size: 7rem;
+    @include flexCenter();
+    font-family: RickyAndMorty;
+    cursor: pointer;
+}
+
+#title__principale,#title__personnage{
+    color: $title;
+    font-size: 4rem;
+    @include flexCenter();
+}
+
+.title__secondaire{
+    color: $title;
+    font-size: 2rem;
+    @include flexCenter();
+   padding-bottom: 30px;
+}

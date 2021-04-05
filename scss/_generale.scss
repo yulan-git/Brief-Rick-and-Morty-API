@@ -1,0 +1,73 @@
+@font-face {
+    font-family: RickyAndMorty;
+    src: url(/font/get_schwifty.ttf);
+    font-weight: bold;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    color: $writingColor;
+    font-family: RickyAndMorty;
+    //@include background(background-image, $backgroundImage);
+}
+
+
+
+.pagination {
+    font-size: 30px;
+    text-align: center;
+    color: #C6C268;
+    padding-bottom: 20px;
+
+    & .num__page{
+        padding: 0px 20px;
+    }
+    & .num__page:hover{
+        color: $titleNav;
+    }
+}
+
+
+body.accueil__theme {
+@include background(background-image, $backgroundImageAccueil);
+}
+body.location__theme {
+@include background(background-image, $backgroundImageLocation);
+}
+
+  /* body.black__theme & {
+    @include theme-colors($accueil-theme: false);
+  }
+} */
+
+body.black__theme{
+    @include background(background-color, $backgroundColor);
+}
+
+main{
+    height: 65vh;
+}
+
+.nav__link {
+    @include link();
+    &:hover {
+        & {
+            color:$writingColor;
+        }
+    }
+}
+
+.nav__menu{
+    @include navMenu('#nav__link1', '#nav__link2', '#nav__link3');
+}
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+
+page personnage.html = 
+-Page listant tous les perso de la serie;
+
+-Au click sur les noms les infos sur les perso s'affichent :
+	-nom
+	-status
+	-espèce
+	-type
+	-genre
+	-planète d'origine
+	-dernier lieux de positionnement connu
+	-les épisodes dans le(s)quel(s) le personnage apparait;
+
+-mettre en place un selecteur pour n'aficher que les noms des perso d'une espèce précise;
+(BONUS = selecteur de status, selecteur de genre, selecteur de planète d'origine) 
+
+Il me reste à : 
+-recouvrire la div2 avec une image correspondant au personnage quand l'utilisateur arrive sur le site 
+-au sur vol le nom grossit 
+-quand il clic sur le nom :
+-sois l'image passe en second plan laissant apparaitre les info 
+-sois elle disparait 
+

@@ -1,0 +1,37 @@
+.container__species{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    border: 1px solid #fff;
+    color: $titleNav;
+    font-size: 23px;
+
+}
+
+.container__personnages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+
+    .personnage{
+    margin-bottom: 15px;
+    width: 18%;
+    border: solid 2px #fff;
+    box-shadow: 3px 3px 5px #fff;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    font-family: cursive;
+    font-weight: bold;
+    .personnage__name{
+        color: $title;
+        &:hover{
+            font-size: 1.4em;
+            cursor: pointer;
+        }
+    }
+    }
+    
+}

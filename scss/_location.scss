@@ -1,0 +1,48 @@
+.container__location{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 30px;
+    border: 1px solid $writingColor;
+    background-color:#C6C268; 
+    opacity: 0.5;
+
+    & .type__label {
+        padding: 5px 15px;
+        font-size: 1.4rem;
+        color: $backgroundColor;
+        font-family: cursive;
+        display: block;
+
+    }
+
+}
+.container__planets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+
+    & .planet{
+        margin-bottom: 15px;
+        width: 18%;
+        border: solid 2px $writingColor;
+        box-shadow: 3px 3px 5px #FFF;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s;
+        font-family: cursive;
+        font-weight: bold;
+    }
+
+    & .planet:hover{
+        opacity: 0.6;
+        background-color: $titleNav;
+        transform: scale(1.1);
+    }
+
+    .planet__name:hover{
+        cursor: pointer;
+        color: $backgroundColor;
+    }
+}

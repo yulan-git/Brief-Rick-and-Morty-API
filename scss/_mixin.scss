@@ -1,0 +1,41 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexAround{
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin background($prop, $valeur){
+    #{$prop}: $valeur;
+}
+
+@mixin link {
+    position: absolute;
+    text-decoration: none;
+    color: $titleNav;
+    font-size: 3rem;
+}
+
+@mixin navMenu($desc...){
+    @for $i from 0 to length($desc){
+        #{nth($desc, $i + 1)}{
+            padding-left: 70px + $i * 500;
+            padding-top: 10px + $i * 60;
+            list-style: none;
+        }
+    }
+}
+
+@mixin theme-colors($accueil-theme: true) {
+    @if $acceuil-theme {
+        background-image: $backgroundImageAccueil;
+    } @else {
+    background-color: $backgroundColor;
+        }
+    }
+
+

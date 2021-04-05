@@ -1,0 +1,24 @@
+{
+  "name": "Brief-Rick-and-Morty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/js/script_location.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yulan-git/Brief-Rick-and-Morty-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yulan-git/Brief-Rick-and-Morty-API/issues"
+  },
+  "homepage": "https://github.com/yulan-git/Brief-Rick-and-Morty-API#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}
